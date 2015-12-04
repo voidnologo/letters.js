@@ -13,20 +13,23 @@ function checkInput(){
     console.log("input" + userInput);
     console.log("current" + currentLetter);
     if(userInput === currentLetter){
-        displayStatus('Ok');
+        displayStatus('Ok', 'check-ok');
         setTimeout(randomLetter, 2000)
     }else{
-        displayStatus('Wrong');
+        displayStatus('Wrong', 'check-wrong');
     }
 }
 
-function displayStatus(status){
+function displayStatus(status, displayClass){
     document.getElementById('status').innerHTML = status;
+    document.getElementById('status').className = displayClass;
+    document.getElementById('status').style.display = 'block';
     setTimeout(clearStatus, 2000)
 }
 
 function clearStatus(){
     document.getElementById('status').innerHTML = '';
+    document.getElementById('status').style.display = 'none';
     document.getElementById('userInput').value = '';
     document.getElementById('userInput').focus();
 }

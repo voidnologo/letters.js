@@ -1,14 +1,20 @@
+<!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <script src="letter.js"></script>
     <link rel="stylesheet" href="letter.css">
   </head>
   <body onload="randomLetter();">
-    <div id='letter'></div>
-    <div id='status'></div>
-    <div>
-      <input type='text' id='userInput' placeholder='Guess' />
-      <input type='button' onclick='checkInput()' value='Check'/>
+    <div class="container">
+      <div id='letter'></div>
+      <div id='status'></div>
+      <div>
+        <form method="post" action="return false;">
+          <input type='text' id='userInput' placeholder='Guess' />
+          <input type='button' onclick='checkInput()' value='Check'/>
+        </form>
+      </div>
     </div>
     <script type="text/javascript">document.getElementById('userInput').focus();</script>
   </body>

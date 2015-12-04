@@ -1,5 +1,41 @@
 #letter {
+    display: table-row;
     font: ‘Lucida Console’, Monaco, monospace;
     color: Blue;
     font-size: 250px;
+    text-align: center;
+}
+
+#status {
+    display: table-row;
+}
+
+.container {
+    margin: 0 auto;
+    width: 300px;
+    display: table;
+}
+
+.check-wrong {
+    width: 200px;
+    height: 90px;
+    border-size: 2px;
+    border-style: solid;
+    border-color: #C90404;
+    color: #C90404;
+    background-color: #FAB1B1;
+    font-size: 50px;
+    text-align: center;
+}
+
+.check-ok {
+    width: 200px;
+    height: 90px;
+    border-size: 2px;
+    border-style: solid;
+    border-color: #00B50F;
+    color: #00B50F;
+    background-color: #A1E3A7;
+    font-size: 50px;
+    text-align: center;
 }
