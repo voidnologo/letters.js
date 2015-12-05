@@ -10,9 +10,9 @@
       <div id='letter'></div>
       <div id='status'></div>
       <div>
-        <form method="post" action="return false;">
-          <input type='text' id='userInput' placeholder='Guess' />
-          <input type='button' onclick='checkInput()' value='Check'/>
+        <form method="post" action="javascript:checkInput()">
+          <input type="text" id="userInput" class="input" maxlength="1"/>
+          <!-- <input type="button" onclick="checkInput()" value="Check"/> -->
         </form>
       </div>
     </div>
