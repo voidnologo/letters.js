@@ -6,6 +6,7 @@ function randomLetter(){
     //return(letters.charAt(randomNumber));
     currentLetter = letters.charAt(randomNumber);
     document.getElementById('letter').innerHTML = currentLetter;
+    sayLetter(currentLetter)
 }
 
 function checkInput(){
@@ -32,4 +33,9 @@ function clearStatus(){
     document.getElementById('status').style.display = 'none';
     document.getElementById('userInput').value = '';
     document.getElementById('userInput').focus();
+}
+
+function sayLetter(letter){
+    var sound = new Audio("audio/ogg/" + letter.toUpperCase() + ".ogg")
+    sound.play()
 }
